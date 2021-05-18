@@ -9,22 +9,22 @@ pipeline {
         }
         stage('clean code') {
             steps {
-                sh 'mvn clean -f maven_myapp'
+                sh 'mvn clean'
             }
         }
         stage('install code') {
             steps {
-                sh 'mvn install -f maven_myapp'
+                sh 'mvn install'
             }
         }
         stage('test code') {
             steps {
-                sh 'mvn test -f maven_myapp'
+                sh 'mvn test -f'
             }
         }
         stage('package code') {
             steps {
-                sh 'mvn package -f maven_myapp'
+                sh 'mvn package '
             }
         }
     }
