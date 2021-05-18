@@ -19,7 +19,7 @@ pipeline {
         }
         stage('test code') {
             steps {
-                sh 'mvn test -f'
+                sh 'mvn test '
             }
         }
         stage('package code') {
